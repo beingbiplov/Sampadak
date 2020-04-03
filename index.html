@@ -2,9 +2,32 @@
 <html>
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<title>GOQ</title>
+		<title>Sampadak | Markdowm Editor</title>
 		<link rel="stylesheet" type="text/css" href="style.css">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+		
+		
+
+		<!-- For Codemirror -->
+		<script src="lib/codemirror.js"></script>
+		<link rel="stylesheet" href="lib/codemirror.css">
+		<script src="mode/javascript/javascript.js"></script>
+
+		<script src="addon/scroll/annotatescrollbar.js"></script>
+		<script src="addon/search/matchesonscrollbar.js"></script>
+		<script src="addon/search/searchcursor.js"></script>
+		<script src="addon/search/match-highlighter.js"></script>
+
+		<script src="addon/edit/closebrackets.js"></script>
+
+		<script src="mode/xml/xml.js"></script>
+		<script src="addon/selection/active-line.js"></script>
+
+		<!-- End codemirror links -->
+
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+
 	</head>
 	<body>
 
@@ -34,7 +57,30 @@
 		</nav>
 		</div>
 
+		<!-- Editor section -->
+		<div class="container-fluid body_section">
+			<div class="row">
+				<div class="col-lg-6 col-md-6" border=1 >
 
+					<div class="nametag">
+						<span class='editor_tag'>MARKDOWN</span>
+					</div>
+					<div id="editor_section" class="editor_section">
+						
+					</div>
+					
+				</div>
+				<div class="col-lg-6 col-md-6">
+					
+				</div>
+			</div>
+		</div>
+
+
+		
+
+
+		<script src="js/script.js"></script>
 
 		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>

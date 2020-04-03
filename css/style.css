@@ -1,0 +1,30 @@
+html {}
+body {
+    height: 95vh;
+     overflow: hidden;
+}
+
+.body_section{
+	padding-top: 7px;
+}
+
+.CodeMirror{
+	height: 86vh;
+	font-size: 1rem;
+	font-family: ubuntu mono,Monaco;
+	font-weight: 400;
+	line-height: 2rem;
+	width: 100%;
+}
+
+.editor_section{
+	border:1px solid grey;
+	border-bottom: none;
+}
+
+.nametag{
+	padding-left: 25px;
+	color: grey;
+	border:1px solid grey;
+	border-bottom: none;
+}
