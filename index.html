@@ -25,6 +25,7 @@
 		<script src="addon/selection/active-line.js"></script>
 
 		<!-- End codemirror links -->
+		<script src="js/jquery-3.4.1.js"></script>
 
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 
@@ -60,7 +61,7 @@
 		<!-- Editor section -->
 		<div class="container-fluid body_section">
 			<div class="row">
-				<div class="col-lg-6 col-md-6" border=1 >
+				<div class="col-lg-6 col-md-6 editor_div" >
 
 					<div class="nametag">
 						<span class='editor_tag'>MARKDOWN</span>
@@ -70,8 +71,17 @@
 					</div>
 					
 				</div>
-				<div class="col-lg-6 col-md-6">
-					
+				<div class="col-lg-6 col-md-6 preview_div">
+					<div id="preview">
+						<div class="nametag_preview">
+						<span class='preview_tag'>PREVIEW</span>
+						</div>
+						<div class="preview_section" id="preview_section" >
+							
+						</div>
+						
+					</div>
+
 				</div>
 			</div>
 		</div>
@@ -80,6 +90,8 @@
 		
 
 
+		<script src="bower_components/showdown/dist/showdown.min.js"></script>
+		
 		<script src="js/script.js"></script>
 
 		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

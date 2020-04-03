@@ -15,16 +15,86 @@ body {
 	font-weight: 400;
 	line-height: 2rem;
 	width: 100%;
+	border-right: 7px solid #d8d8d8;
+	padding-right: 2px;
+}
+.editor_div{
+	padding-right: 0;
+}
+
+.preview_div{
+	padding: 0;
+	padding-right: 3px;
+
+}
+
+.preview_section{
+	height: 86vh;
+	font-size: 1rem;
+	font-family: ubuntu mono,Monaco;
+	font-weight: 400;
+	line-height: 2rem;
+	width: 100%;
+	border:1px solid #d8d8d8;
+	border-bottom: none;
+	border-left: none;
+	overflow:scroll;
+	padding-left: 10px;
+	padding-top: 5px;
 }
 
 .editor_section{
-	border:1px solid grey;
+	border:1px solid #d8d8d8;
 	border-bottom: none;
 }
+
 
 .nametag{
 	padding-left: 25px;
 	color: grey;
-	border:1px solid grey;
+	border:1px solid #d8d8d8;
 	border-bottom: none;
 }
+
+.nametag_preview{
+	padding-left: 25px;
+	color: grey;
+	border:1px solid #d8d8d8;
+	border-bottom: none;
+	border-left: none;
+}
+
+code {
+	background-color: #d8d8d8;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+pre > code{
+	padding: 7px 10px;
+	display: inline-block;
+	min-width: 75%;
+	background-color: #d8d8d8; 
+	margin-left:3%;
+
+}
+
+blockquote {
+  background: #f9f9f9;
+  border-left: 10px solid #ccc;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+blockquote:before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+blockquote p {
+  display: inline;
+}
+
