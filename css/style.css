@@ -54,6 +54,7 @@ body {
 	color: grey;
 	border:1px solid #d8d8d8;
 	border-bottom: none;
+
 }
 
 .nametag_preview{
@@ -96,5 +97,18 @@ blockquote:before {
 }
 blockquote p {
   display: inline;
+}
+
+.theme_selector{
+	display: inline-block;
+	margin-left: 35%;
+	margin-bottom: 0;
+}
+
+.theme_selector > select {
+	height: 20px;
+	font-size: 12px;
+	border: none;
+	background: #e8e8e8;
 }
 

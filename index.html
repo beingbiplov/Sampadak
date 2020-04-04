@@ -25,6 +25,21 @@
 		<script src="addon/selection/active-line.js"></script>
 
 		<!-- End codemirror links -->
+
+		<!-- Theme links -->
+
+		<link rel="stylesheet" href="theme/night.css">
+		<link rel="stylesheet" href="theme/3024-night.css">
+
+		<!-- End theme links -->
+
+		<!-- Fullscreen ink -->
+		<link rel="stylesheet" href="addon/display/fullscreen.css">
+		<script src="addon/display/fullscreen.js"></script>
+
+		<!-- End  of fullsscreen link -->
+
+
 		<script src="js/jquery-3.4.1.js"></script>
 
 		<link rel="stylesheet" type="text/css" href="css/style.css">
@@ -65,6 +80,14 @@
 
 					<div class="nametag">
 						<span class='editor_tag'>MARKDOWN</span>
+						<p class="theme_selector mr-auto">Theme
+							<select onchange="selectTheme()" id=select>
+		    					<option selected>default</option>
+		    					<option value="night">Night</option>
+		    					<option value="3024-night">lights Out</option>
+		    					
+	    					</select>
+						</p>
 					</div>
 					<div id="editor_section" class="editor_section">
 						
