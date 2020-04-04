@@ -9,7 +9,14 @@ var myCodeMirror = CodeMirror(document.getElementById('editor_section'), {
 		    styleActiveLine: true,
 		    autoCloseBrackets: true,
 		    highlightSelectionMatches: {showToken: /\w/, annotateScrollbar: true},
-		    
+		    extraKeys: {
+		        "F11": function(cm) {
+		          cm.setOption("fullScreen", !cm.getOption("fullScreen"));
+		        },
+		        "Esc": function(cm) {
+		          if (cm.getOption("fullScreen")) cm.setOption("fullScreen", false);
+		        }
+		      }
 		});
 
 
