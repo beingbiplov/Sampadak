@@ -49,13 +49,16 @@
 
 		<div class="">
 	
-			<nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="width: 100%">
+			<nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="">
+			<div class=" nav_brand mx-auto">
+			  	<h4><a href="#" class="navbar-brand">Sampadak</a></h4>
+			</div>
 		  
-		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#export_as" aria-controls="export_as" aria-expanded="false" aria-label="Toggle navigation">
 		    <span class="navbar-toggler-icon"></span>
 		  </button>
 
-		  <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+		  <div class="collapse navbar-collapse" id="export_as">
 		   <!-- <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
 		      <li class="nav-item active">
 		        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
@@ -64,10 +67,21 @@
 		    </ul>
 		-->
 
-		    <div class="mx-auto">
-			  	<h4><a href="#" class="navbar-brand">Sampadak</a></h4>
-			</div>
 		    
+		    <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+		    	<li class="nav-item">
+		    		<div class="dropdown">
+					  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					    Export as
+					  </button>
+					  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+					    <a class="dropdown-item" onclick="export_as_html()" >HTML file</a>
+					    <a class="dropdown-item" onclick="export_as_markdowm()">MD file</a>
+					    
+					  </div>
+					</div>
+		    	</li>
+		    </ul>
 		   
 		  </div>
 		</nav>

@@ -4,6 +4,15 @@ body {
      overflow: hidden;
 }
 
+#dropdownMenuButton{
+	background: #343a40;
+	margin-right: 25px;
+	position: relative;
+}
+.nav_brand{
+	text-align: center;
+}
+
 .body_section{
 	padding-top: 7px;
 }
@@ -101,7 +110,7 @@ blockquote p {
 
 .theme_selector{
 	display: inline-block;
-	margin-left: 35%;
+	margin-left: 50%;
 	margin-bottom: 0;
 }
 
@@ -112,3 +121,19 @@ blockquote p {
 	background: #e8e8e8;
 }
 
+.dropdown-item{
+	cursor: pointer;
+}
+
+@media(min-width: 1000px){
+	.navbar-brand{
+		margin-left: 540%;
+	}
+}
+
+@media(max-width: 956px){
+	.theme_selector{
+		margin-left: 25%;
+	}
+
+}

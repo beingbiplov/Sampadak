@@ -63,3 +63,43 @@ function selectTheme() {
     var theme = location.hash.slice(1);
     if (theme) { input.value = theme; selectTheme(); }
   });
+
+function export_html(filename, text) {
+	var element = document.createElement('a');
+	element.setAttribute('href', 'data:text/html;charset=utf-8,' + encodeURIComponent(text));
+	element.setAttribute('download', filename);
+
+	element.style.display = 'none';
+	document.body.appendChild(element);
+
+	element.click();
+
+	document.body.removeChild(element);
+}
+function export_markdown(filename, text) {
+	var element = document.createElement('a');
+	element.setAttribute('href', 'data:text/markdown;charset=utf-8,' + encodeURIComponent(text));
+	element.setAttribute('download', filename);
+
+	element.style.display = 'none';
+	document.body.appendChild(element);
+
+	element.click();
+
+	document.body.removeChild(element);
+}
+
+// Start file download.
+function export_as_html(){
+	var text = markdown_to_html();
+	var filename = "Sampadak_.html";
+
+	export_html(filename, text);
+}
+
+function export_as_markdowm(){
+	var text = myCodeMirror.getValue();
+	var filename = "Sampadak_.md";
+
+	export_markdown(filename, text);
+}
