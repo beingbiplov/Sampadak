@@ -57,6 +57,31 @@ body {
 	border-bottom: none;
 }
 
+.file_name_input{
+	display: inline-block;
+	margin-left: 40%;
+	margin-bottom: 0;
+	padding: 0;
+}
+
+.file_name_div{
+	display: inline-block;
+}
+
+
+.file_name{
+	height: 20px;
+	border:none;
+	min-width: 155px!important;
+	border-bottom: 1px solid #d8d8d8;
+	border-right: 1px solid #d8d8d8;
+	border-left: 1px solid #d8d8d8;
+	margin-bottom: 0;
+	padding: 0;
+	color:#d8d8d8;
+}
+
+
 
 .nametag{
 	padding-left: 25px;
@@ -121,6 +146,8 @@ blockquote p {
 	background: #e8e8e8;
 }
 
+
+
 .dropdown-item{
 	cursor: pointer;
 }
@@ -135,5 +162,8 @@ blockquote p {
 	.theme_selector{
 		margin-left: 25%;
 	}
+	.file_name_input{
+	margin-left: 20%;
+    }
 
 }
