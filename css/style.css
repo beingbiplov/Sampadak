@@ -60,8 +60,6 @@ body {
 .file_name_input{
 	display: inline-block;
 	margin-left: 40%;
-	margin-bottom: 0;
-	padding: 0;
 }
 
 .file_name_div{
@@ -76,9 +74,7 @@ body {
 	border-bottom: 1px solid #d8d8d8;
 	border-right: 1px solid #d8d8d8;
 	border-left: 1px solid #d8d8d8;
-	margin-bottom: 0;
-	padding: 0;
-	color:#d8d8d8;
+	color:grey;
 }
 
 
