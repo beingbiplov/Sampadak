@@ -92,14 +92,18 @@ function export_markdown(filename, text) {
 // Start file download.
 function export_as_html(){
 	var text = markdown_to_html();
-	var filename = "Sampadak_.html";
-
+	var filename = document.getElementById('file_name').value;
+	if (filename.length ==0){
+		filename = "Sampadak_.html"
+	}
 	export_html(filename, text);
 }
 
 function export_as_markdowm(){
 	var text = myCodeMirror.getValue();
-	var filename = "Sampadak_.md";
-
+	var filename = document.getElementById('file_name');
+	if (filename.length ==0){
+		filename = "Sampadak_.md"
+	}
 	export_markdown(filename, text);
 }
