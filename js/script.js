@@ -107,3 +107,30 @@ function export_as_markdowm(){
 	}
 	export_markdown(filename, text);
 }
+
+
+$(document).ready(function() {
+	$('.preview_md_toggle').on('click',
+			function(){
+				$('.editor_div, .preview_div').toggle();
+				$('#preview_toggle, #markdown_toggle').toggle();
+			})
+
+	$(window).resize(function() {
+        // This will fire each time the window is resized:
+        if($(window).width() >= 768) {
+            // if larger or equal
+            $('.editor_div').show();
+            $('.preview_div').show();
+            $('#preview_toggle').hide();
+            $('#markdown_toggle').hide();
+        } 
+        if($(window).width() < 768) {
+        	$('#preview_toggle').show();
+        	$('.preview_div').hide()
+        }
+    }).resize();
+
+
+}
+)

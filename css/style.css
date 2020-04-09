@@ -148,7 +148,7 @@ blockquote p {
 	cursor: pointer;
 }
 
-@media(min-width: 1000px){
+@media(min-width: 992px){
 	.navbar-brand{
 		margin-left: 540%;
 	}
@@ -163,3 +163,22 @@ blockquote p {
     }
 
 }
+
+@media(max-width: 768px){
+	.preview_div{
+		display: none;
+	}
+}
+
+.preview_md_toggle{
+	padding-right: 25px;
+	color: white;
+	display: none;
+	cursor: pointer;
+}
+
+
+}
+
+
+
