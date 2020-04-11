@@ -130,6 +130,22 @@ $(document).ready(function() {
 
 	$(window).resize(function() {
         // This will fire each time the window is resized:
+        if($(window).width() < 768) {
+        	var isVisible = $( ".editor_div" ).is( ":visible" );
+        	if (isVisible == true){
+        		$('#preview_toggle').show();
+	        	$('#markdown_toggle').hide();
+	        	$('.preview_div').hide()
+	        	$('.editor_div').show();
+        	}
+        	else{
+        		$('#preview_toggle').hide();
+	        	$('#markdown_toggle').show();
+	        	$('.preview_div').show()
+	        	$('.editor_div').hide();	
+        	}
+        	
+        }
         if($(window).width() >= 768) {
             // if larger or equal
             $('.editor_div').show();
@@ -137,10 +153,7 @@ $(document).ready(function() {
             $('#preview_toggle').hide();
             $('#markdown_toggle').hide();
         } 
-        if($(window).width() < 768) {
-        	$('#preview_toggle').show();
-        	$('.preview_div').hide()
-        }
+        
     }).resize();
 
 

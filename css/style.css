@@ -170,6 +170,12 @@ blockquote p {
 	}
 }
 
+@media(max-width: 576px){
+	.file_name{
+		height: 25px;
+	}
+}
+
 .preview_md_toggle{
 	padding-right: 25px;
 	color: white;
