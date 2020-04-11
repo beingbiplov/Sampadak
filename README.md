@@ -22,7 +22,7 @@ Sampadak make use of some awesome open source projects:
 - [jQuery] :  A fast, small, and feature-rich JavaScript library.
 
 ## Want to contribute?
-Sampadak is in early stages of development. You can visit our repository on [Github] to contribute to the project. You can report a bug or  recommend new features.
+Sampadak is in early stages of development. You can report a bug or  recommend new features.
 **You can help Sampadak be Great.**
 <br>
 ## License

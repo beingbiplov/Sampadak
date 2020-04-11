@@ -183,7 +183,7 @@ MIT
 [Bootstrap]: <https://getbootstrap.com/>
 [jQuery]: <https://jquery.com/>
 [Django]: <https://www.djangoproject.com/>
-[GitHub]: <https://github.com/>
+[GitHub]: <https://github.com/beingbiplov/Sampadak/>
 [link]: <https://daringfireball.net/projects/markdown/syntax>
 
 `
