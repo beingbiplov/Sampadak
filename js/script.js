@@ -162,6 +162,8 @@ $(document).ready(function() {
 
 
 default_text = `# SAMPADAK
+[![Build Status](https://travis-ci.org/beingbiplov/Sampadak.svg?branch=master)](https://travis-ci.org/beingbiplov/Sampadak)
+
 Sampadak is an online Markdown editor with the live preview support. You can type your markdown on the editor and see the real time HTML on the preview section.
 
 ## Features:
