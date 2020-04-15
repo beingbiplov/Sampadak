@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>Sampadak | Markdown Editor</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+		
+
+
+		<!-- For Codemirror -->
+		<script src="lib/codemirror.js"></script>
+		<link rel="stylesheet" href="lib/codemirror.css">
+		<script src="mode/javascript/javascript.js"></script>
+
+		<script src="addon/scroll/annotatescrollbar.js"></script>
+		<script src="addon/search/matchesonscrollbar.js"></script>
+		<script src="addon/search/searchcursor.js"></script>
+		<script src="addon/search/match-highlighter.js"></script>
+
+		<script src="addon/edit/closebrackets.js"></script>
+
+		<script src="mode/xml/xml.js"></script>
+		<script src="addon/selection/active-line.js"></script>
+
+		<!-- End codemirror links -->
+
+		<!-- Theme links -->
+
+		<link rel="stylesheet" href="theme/night.css">
+		<link rel="stylesheet" href="theme/3024-night.css">
+
+		<!-- End theme links -->
+
+		<!-- Fullscreen ink -->
+		<link rel="stylesheet" href="addon/display/fullscreen.css">
+		<script src="addon/display/fullscreen.js"></script>
+
+		<!-- End  of fullsscreen link -->
+
+
+		<script src="js/jquery-3.4.1.js"></script>
+
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	</head>
+	<body>
+
+		<div class="">
+	
+			<nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="">
+			<div class=" nav_brand mx-auto">
+			  	<h4><a href="#" class="navbar-brand">Sampadak</a></h4>
+			</div>
+			<p class="preview_md_toggle" id="preview_toggle">Preview</p>
+			<p class="preview_md_toggle" id="markdown_toggle">Markdown</p>
+		  
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#export_as" aria-controls="export_as" aria-expanded="false" aria-label="Toggle navigation">
+		    <span class="navbar-toggler-icon"></span>
+		  </button>
+
+		  <div class="collapse navbar-collapse" id="export_as">
+		 	
+		    <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+		    	<li class="nav-item">
+		    		<div class="dropdown">
+					  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					    Export as
+					  </button>
+					  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+					    <a class="dropdown-item" onclick="export_as_html()" >HTML file</a>
+					    <a class="dropdown-item" onclick="export_as_markdowm()">MD file</a>
+					    
+					  </div>
+					</div>
+		    	</li>
+		    </ul>
+		   
+		  </div>
+		</nav>
+		</div>
+
+		<!-- Editor section -->
+		<div class="container-fluid body_section">
+			<div class="row">
+				<div class="col-lg-6 col-md-6 editor_div" >
+
+					<div class="nametag">
+						<span class='editor_tag'>MARKDOWN</span>
+						<p class="theme_selector mr-auto">Theme
+							<select onchange="selectTheme()" id=select>
+		    					<option selected>default</option>
+		    					<option value="night">Night</option>
+		    					<option value="3024-night">lights Out</option>
+		    					
+	    					</select>
+						</p>
+					</div>
+					<div id="editor_section" class="editor_section">
+						
+					</div>
+					
+				</div>
+				<div class="col-lg-6 col-md-6 preview_div">
+					<div id="preview">
+						<div class="nametag_preview">
+						<span class='preview_tag'>PREVIEW</span>
+						
+						<div class="file_name_input mr-auto">
+							
+							  <div class="file_name_div input-group input-group-sm ">
+							    
+							    <input type="text" class="file_name form-control" placeholder="Document Name" id="file_name">
+							  </div>
+							
+						</div>
+					</div>
+
+						<div class="preview_section" id="preview_section" >
+							
+						</div>
+						
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+
+		
+
+
+		<script src="bower_components/showdown/dist/showdown.min.js"></script>
+		
+		<script src="js/script.js"></script>
+
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	</body>
+</html>

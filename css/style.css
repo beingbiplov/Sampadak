@@ -1,0 +1,190 @@
+html {}
+body {
+    height: 95vh;
+     overflow: hidden;
+}
+
+#dropdownMenuButton{
+	background: #343a40;
+	margin-right: 25px;
+	position: relative;
+}
+.nav_brand{
+	text-align: center;
+}
+
+.body_section{
+	padding-top: 7px;
+}
+
+.CodeMirror{
+	height: 86vh;
+	font-size: 1rem;
+	font-family: ubuntu mono,Monaco;
+	font-weight: 400;
+	line-height: 2rem;
+	width: 100%;
+	border-right: 7px solid #d8d8d8;
+	padding-right: 2px;
+}
+.editor_div{
+	padding-right: 0;
+}
+
+.preview_div{
+	padding: 0;
+	padding-right: 3px;
+
+}
+
+.preview_section{
+	height: 86vh;
+	font-size: 1rem;
+	font-family: ubuntu mono,Monaco;
+	font-weight: 400;
+	line-height: 2rem;
+	width: 100%;
+	border:1px solid #d8d8d8;
+	border-bottom: none;
+	border-left: none;
+	overflow:scroll;
+	padding-left: 10px;
+	padding-top: 5px;
+}
+
+.editor_section{
+	border:1px solid #d8d8d8;
+	border-bottom: none;
+}
+
+.file_name_input{
+	display: inline-block;
+	margin-left: 40%;
+}
+
+.file_name_div{
+	display: inline-block;
+}
+
+
+.file_name{
+	height: 20px;
+	border:none;
+	min-width: 155px!important;
+	border-bottom: 1px solid #d8d8d8;
+	border-right: 1px solid #d8d8d8;
+	border-left: 1px solid #d8d8d8;
+	color:grey;
+}
+
+
+
+.nametag{
+	padding-left: 25px;
+	color: grey;
+	border:1px solid #d8d8d8;
+	border-bottom: none;
+
+}
+
+.nametag_preview{
+	padding-left: 25px;
+	color: grey;
+	border:1px solid #d8d8d8;
+	border-bottom: none;
+	border-left: none;
+}
+
+code {
+	background-color: #d8d8d8;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+pre > code{
+	padding: 7px 10px;
+	display: inline-block;
+	min-width: 75%;
+	background-color: #d8d8d8; 
+	margin-left:3%;
+
+}
+
+blockquote {
+  background: #f9f9f9;
+  border-left: 10px solid #ccc;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+blockquote:before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+blockquote p {
+  display: inline;
+}
+
+.theme_selector{
+	display: inline-block;
+	margin-left: 50%;
+	margin-bottom: 0;
+}
+
+.theme_selector > select {
+	height: 20px;
+	font-size: 12px;
+	border: none;
+	background: #e8e8e8;
+}
+
+
+
+.dropdown-item{
+	cursor: pointer;
+}
+
+@media(min-width: 992px){
+	.navbar-brand{
+		margin-left: 540%;
+	}
+}
+
+@media(max-width: 956px){
+	.theme_selector{
+		margin-left: 25%;
+	}
+	.file_name_input{
+	margin-left: 15%;
+    }
+
+}
+
+@media(max-width: 768px){
+	.preview_div{
+		display: none;
+	}
+}
+
+@media(max-width: 576px){
+	.file_name{
+		height: 25px;
+	}
+}
+
+.preview_md_toggle{
+	padding-right: 25px;
+	color: white;
+	display: none;
+	cursor: pointer;
+}
+
+
+}
+
+
+
