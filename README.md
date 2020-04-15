@@ -35,4 +35,4 @@ MIT
 [jQuery]: <https://jquery.com/>
 [GitHub]: <https://github.com/>
 [link]: <https://daringfireball.net/projects/markdown/syntax>
-[live demo]: <http://sampadak.herokuapp.com/>
+[live demo]: <https://beingbiplov.github.io/Sampadak/>
