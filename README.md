@@ -1,13 +1,21 @@
 # SAMPADAK
 Sampadak is an online Markdown editor with the live preview support. You can type your markdown on the editor and see the real time HTML on the preview section.
 
-[live demo]
 
 ## Features:
 - Markdown to HTML live preview.
 - Export the document as a Markdown or an HTML file.
 - Three different theme support.
 - Fullscreen editor support. (Press F11 while on editor to enter fullscrene and Esc to exit out)
+
+<div align="center">
+  <br>
+  <br>
+  <img src="images/Screenshot_1.png" alt="sampadak" width="95%">
+  <br>
+  <br>
+</div>
+
 
 ### Markdown?
 >Markdown is a text-to-HTML conversion tool for web writers. Markdown allows you to write using an easy-to-read, easy-to-write plain text format, then convert it to structurally valid XHTML (or HTML).
