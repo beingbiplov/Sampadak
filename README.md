@@ -17,7 +17,6 @@ You can follow this [link] if you need any help with markdown syntax.
 Sampadak make use of some awesome open source projects:
 - [CodeMirror] : A versatile text editor implemented in JavaScript for the browser.
 - [Showdownjs] : A Markdown to HTML bidirectional converter.
-- [Django] : A high-level Python Web framework that encourages rapid development and clean, pragmatic design
 - [Bootstrap] : An open source toolkit for developing with HTML, CSS, and JS.
 - [jQuery] :  A fast, small, and feature-rich JavaScript library.
 
@@ -34,7 +33,6 @@ MIT
 [Showdownjs]: <http://showdownjs.com/>
 [Bootstrap]: <https://getbootstrap.com/>
 [jQuery]: <https://jquery.com/>
-[Django]: <https://www.djangoproject.com/>
 [GitHub]: <https://github.com/>
 [link]: <https://daringfireball.net/projects/markdown/syntax>
 [live demo]: <http://sampadak.herokuapp.com/>
