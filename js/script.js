@@ -70,6 +70,21 @@ function selectTheme() {
     if (theme) { input.value = theme; selectTheme(); }
   });
 
+// Importing files
+
+document.getElementById('mdfile') 
+            .addEventListener('change', function() { 
+              
+            var fr=new FileReader(); 
+            fr.onload=function(){ 
+            	myCodeMirror.setValue(fr.result); 
+            	$('#preview_section').html(markdown_to_html());           } 
+              
+            fr.readAsText(this.files[0]); 
+        }) 
+
+
+// Exporting files
 function export_html(filename, text) {
 	var element = document.createElement('a');
 	element.setAttribute('href', 'data:text/html;charset=utf-8,' + encodeURIComponent(text));
@@ -204,3 +219,6 @@ MIT
 
 myCodeMirror.setValue(default_text);
 $('#preview_section').html(markdown_to_html());
+
+
+
