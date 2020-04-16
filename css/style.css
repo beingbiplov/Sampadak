@@ -161,6 +161,11 @@ blockquote p {
 	.file_name_input{
 	margin-left: 15%;
     }
+    .upload-btn-wrapper input[type=file] {
+    	font-size: 25px;
+    	top:40px;
+
+    }
 
 }
 
@@ -187,4 +192,32 @@ blockquote p {
 }
 
 
+.upload-btn-wrapper {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+
+
+
+.upload-btn-wrapper input[type=file] {
+  font-size: 45px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  cursor: pointer;
+
+}
+
+.btn{
+	background-color: white;
+}
+
+@media(max-width: 976px){
+	.upload-btn-wrapper input[type=file]{
+		font-size: 25px;
+		top: 40px;
+	}
+}
 
