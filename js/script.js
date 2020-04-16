@@ -185,6 +185,7 @@ Sampadak is an online Markdown editor with the live preview support. You can typ
 ## Features:
 - Markdown to HTML live preview.
 - Export the document as a Markdown or an HTML file.
+- Import a Markdown file. 
 - Three different theme support.
 - Fullscreen editor support. (Press F11 while on editor to enter fullscrene and Esc to exit out)
 
