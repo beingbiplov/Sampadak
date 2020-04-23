@@ -19,9 +19,6 @@ var myCodeMirror = CodeMirror(document.getElementById('editor_section'), {
 		      }
 		});
 
-
-
-
 function markdown_to_html() {
 	showdown.setOption('noHeaderId' , true);
   	var text =  myCodeMirror.getValue(),
@@ -47,9 +44,6 @@ $(document).ready(function(){
 	})
 
 })
-
-
-
 
 
 var input = document.getElementById("select");
@@ -110,12 +104,29 @@ function export_markdown(filename, text) {
 	document.body.removeChild(element);
 }
 
+function export_pdf(filename, text){
+	var doc = new jsPDF();
+	var elementHTML = text
+	var specialElementHandlers = {
+	    '#elementH': function (element, renderer) {
+	        return true;
+	    }
+	};
+	doc.fromHTML(elementHTML, 15, 15, {
+	    'width': 170,
+	    'elementHandlers': specialElementHandlers
+	},
+	function(bla){doc.save(filename);},
+	);
+}
+
+
 // Start file download.
 function export_as_html(){
 	var text = markdown_to_html();
 	var filename = document.getElementById('file_name').value;
 	if (filename.trim().length ==0){
-		filename = "Sampadak_.html"
+		filename = "Sampadak_untitled.html"
 	}
 	else{
 		filename = filename.trim()+'.html'
@@ -127,12 +138,24 @@ function export_as_markdowm(){
 	var text = myCodeMirror.getValue();
 	var filename = document.getElementById('file_name').value;
 	if (filename.trim().length ==0){
-		filename = "Sampadak_.md"
+		filename = "Sampadak_untitled.md"
 	}
 	else{
 		filename = filename.trim()+'.md'
 	}
 	export_markdown(filename, text);
+}
+
+function export_as_pdf(){
+	var text = markdown_to_html();
+	var filename = document.getElementById('file_name').value;
+	if (filename.trim().length ==0){
+		filename = "Sampadak_untitled.pdf"
+	}
+	else{
+		filename = filename.trim()+'.pdf'
+	}
+	export_pdf(filename, text)
 }
 
 
@@ -184,8 +207,8 @@ Sampadak is an online Markdown editor with the live preview support. You can typ
 
 ## Features:
 - Markdown to HTML live preview.
-- Export the document as a Markdown or an HTML file.
-- Import a Markdown file. 
+- Export the document as a Markdown, a HTML file or a PDF file.
+- Import a Markdown file and get started right away. 
 - Three different theme support.
 - Fullscreen editor support. (Press F11 while on editor to enter fullscrene and Esc to exit out)
 
@@ -199,11 +222,11 @@ Sampadak make use of some awesome open source projects:
 - [Showdownjs] : A Markdown to HTML bidirectional converter.
 - [Bootstrap] : An open source toolkit for developing with HTML, CSS, and JS.
 - [jQuery] :  A fast, small, and feature-rich JavaScript library.
+- [jsPDF] : Client-side JavaScript PDF generator.
 
 ## Want to contribute?
-Sampadak is in early stages of development. You can visit our repository on [Github] to contribute to the project. You can report a bug or  recommend new features.
-**You can help Sampadak be Great.**
-<br>
+You can visit our repository on [Github] to contribute to the project. You can report a bug or  recommend new features.
+
 ## License
 MIT
 
@@ -214,6 +237,7 @@ MIT
 [Bootstrap]: <https://getbootstrap.com/>
 [jQuery]: <https://jquery.com/>
 [GitHub]: <https://github.com/beingbiplov/Sampadak/>
+[jsPDF]: <https://github.com/MrRio/jsPDF>
 [link]: <https://daringfireball.net/projects/markdown/syntax>
 
 `
