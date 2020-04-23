@@ -19,9 +19,6 @@ var myCodeMirror = CodeMirror(document.getElementById('editor_section'), {
 		      }
 		});
 
-
-
-
 function markdown_to_html() {
 	showdown.setOption('noHeaderId' , true);
   	var text =  myCodeMirror.getValue(),
@@ -47,9 +44,6 @@ $(document).ready(function(){
 	})
 
 })
-
-
-
 
 
 var input = document.getElementById("select");
@@ -110,12 +104,29 @@ function export_markdown(filename, text) {
 	document.body.removeChild(element);
 }
 
+function export_pdf(filename, text){
+	var doc = new jsPDF();
+	var elementHTML = text
+	var specialElementHandlers = {
+	    '#elementH': function (element, renderer) {
+	        return true;
+	    }
+	};
+	doc.fromHTML(elementHTML, 15, 15, {
+	    'width': 170,
+	    'elementHandlers': specialElementHandlers
+	},
+	function(bla){doc.save(filename);},
+	);
+}
+
+
 // Start file download.
 function export_as_html(){
 	var text = markdown_to_html();
 	var filename = document.getElementById('file_name').value;
 	if (filename.trim().length ==0){
-		filename = "Sampadak_.html"
+		filename = "Sampadak_untitled.html"
 	}
 	else{
 		filename = filename.trim()+'.html'
@@ -127,12 +138,24 @@ function export_as_markdowm(){
 	var text = myCodeMirror.getValue();
 	var filename = document.getElementById('file_name').value;
 	if (filename.trim().length ==0){
-		filename = "Sampadak_.md"
+		filename = "Sampadak_untitled.md"
 	}
 	else{
 		filename = filename.trim()+'.md'
 	}
 	export_markdown(filename, text);
+}
+
+function export_as_pdf(){
+	var text = markdown_to_html();
+	var filename = document.getElementById('file_name').value;
+	if (filename.trim().length ==0){
+		filename = "Sampadak_untitled.pdf"
+	}
+	else{
+		filename = filename.trim()+'.pdf'
+	}
+	export_pdf(filename, text)
 }
 
 
